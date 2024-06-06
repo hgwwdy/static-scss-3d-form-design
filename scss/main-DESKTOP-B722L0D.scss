@@ -1,0 +1,20 @@
+$primary-color:orange;
+$text-color:white;
+$font-weights:(
+    "regular":400,
+    "medium":500,
+    "bold":700
+     
+);
+body{
+    background-color: $primary-color;
+    color: $text-color;
+    font-weight: map-get($font-weights,bold );
+}
+.main{
+    width: 80%;
+    margin: 0 auto;
+}
+p{
+
+}

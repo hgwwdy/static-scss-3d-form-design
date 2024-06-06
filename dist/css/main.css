@@ -1,0 +1,42 @@
+* {
+  box-sizing: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*mixins*/
+/*using bulean value mixins*/
+body {
+  background-color: pink;
+  color: blue;
+}
+
+.main {
+  /*calling out the mixin*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 80%;
+  margin: 0 auto;
+}
+.main .main_paragraph1, .main .main_paragraph2 {
+  font-weight: 700;
+}
+.main .main_paragraph1:hover, .main .main_paragraph2:hover {
+  color: purple;
+}
+@media (max-width: 800px) {
+  .main {
+    flex-direction: column;
+  }
+}
+.main .main_paragraph2:hover {
+  color: lightblue;
+}
+
+.light {
+  /*setting this to fales wil turn it back to as it was*/
+  background-color: white;
+  color: black;
+}/*# sourceMappingURL=main.css.map */
